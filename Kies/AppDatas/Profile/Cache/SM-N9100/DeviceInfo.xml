@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<Deviceinfo>
+  <VersionCode>2.0</VersionCode>
+  <USBVersion>2.0</USBVersion>
+  <ModelName>SM-N9100</ModelName>
+  <DisplayName></DisplayName>
+  <UserFriendlyDisplayName>Wo-Ki's Galaxy</UserFriendlyDisplayName>
+  <BaseModel>SM-N900</BaseModel>
+  <Platform>Android</Platform>
+  <PlatformVersion>6.0.1</PlatformVersion>
+  <Support>
+    <AsyncPims>encryption</AsyncPims>
+    <AsyncPimsVersion>1.0</AsyncPimsVersion>
+    <NMemoForceRestore>FALSE</NMemoForceRestore>
+    <SamsungNoteForceRestore>TRUE</SamsungNoteForceRestore>
+    <EncBackupVersion>1.0</EncBackupVersion>
+    <AppInstallAgreement>TRUE</AppInstallAgreement>
+  </Support>
+  <Version>N9100ZCS1DQB2/N9100CHC1DQB2/N9100ZCS1DQB2/N9100ZCS1DQB2</Version>
+  <HiddenVersion>N9100ZCS1DQB2/N9100CHC1DQB2/N9100ZCS1DQB2/N9100ZCS1DQB2</HiddenVersion>
+  <MNC>00</MNC>
+  <MCC>460</MCC>
+  <ProductCode>SM-N9100ZWUCHC</ProductCode>
+  <SerialNumber>RV8G1134SNT</SerialNumber>
+  <IMEI>355848067685365</IMEI>
+  <PhoneNumber></PhoneNumber>
+  <PhoneNumber></PhoneNumber>
+  <Security></Security>
+  <Limit>FALSE</Limit>
+  <UniqueNumber>CR3004006C23AC1</UniqueNumber>
+  <ProfilePhoneNumber>15779078172</ProfilePhoneNumber>
+  <ProfileList>
+    <Profile>ServiceInfo.xml</Profile>
+    <Profile>hk.xml</Profile>
+    <Profile>DeviceInfo.xml</Profile>
+  </ProfileList>
+  <User>
+    <Desc>Owner</Desc>
+    <ID>0</ID>
+    <Name>Wo-Ki</Name>
+  </User>
+  <Display>
+    <Width>1440</Width>
+    <Height>2560</Height>
+  </Display>
+  <ProductLineup>ReadFromMTP</ProductLineup>
+  <ConnectModes>
+    <FileManagement value="USB;WIFI" />
+    <Photo value="USB;WIFI" />
+    <Music value="USB;WIFI" />
+    <Video value="USB;WIFI" />
+    <Phonebook value="USB;WIFI" />
+    <Splanner value="USB;WIFI" />
+    <Message value="USB;WIFI" />
+    <SNote3 value="USB;WIFI" />
+    <BackupRestore value="USB;WIFI" />
+    <Playlist value="USB;WIFI" />
+    <FirmwareUpdate value="USB;WIFI" />
+  </ConnectModes>
+</Deviceinfo>

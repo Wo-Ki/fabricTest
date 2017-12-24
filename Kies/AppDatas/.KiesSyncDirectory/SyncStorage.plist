@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SM-N9100</key>
+	<dict>
+		<key>355848067685365_</key>
+		<dict>
+			<key>CalendarSyncBtnState</key>
+			<dict>
+				<key>BtnState</key>
+				<false/>
+			</dict>
+			<key>ContactSyncBtnState</key>
+			<dict>
+				<key>BtnState</key>
+				<false/>
+			</dict>
+			<key>MemoSyncBtnState</key>
+			<dict>
+				<key>BtnState</key>
+				<false/>
+			</dict>
+			<key>MovieSyncBtnState</key>
+			<dict>
+				<key>BtnState</key>
+				<false/>
+			</dict>
+			<key>MusicSyncBtnState</key>
+			<dict>
+				<key>BtnState</key>
+				<false/>
+			</dict>
+			<key>PhotoSyncBtnState</key>
+			<dict>
+				<key>BtnState</key>
+				<false/>
+			</dict>
+			<key>PodcastSyncBtnState</key>
+			<dict>
+				<key>BtnState</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,865 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<SDP version="2.0">
+  <ServiceCommon>
+    <ASyncObex>
+      <FileFolderPath value="internal:\_SamsungBnR_\MDG\" />
+      <SupportVersion value="1.0" />
+    </ASyncObex>
+    <Contents>
+      <Image>
+        <DefaultFolder>
+          <Internal value="/DCIM/Camera" />
+          <External value="/DCIM/Camera" />
+        </DefaultFolder>
+      </Image>
+      <Music>
+        <DefaultFolder>
+          <Internal value="/Music" />
+          <External value="/Music" />
+        </DefaultFolder>
+      </Music>
+      <Movie>
+        <DefaultFolder>
+          <Internal value="/DCIM/Camera" />
+          <External value="/DCIM/Camera" />
+        </DefaultFolder>
+      </Movie>
+    </Contents>
+    <SupportBackupComplete value="true" />
+    <SupportRestoreComplete value="true" />
+    <SupportBackupInfo value="true" />
+  </ServiceCommon>
+  <Message>
+    <SupportBox>
+      <SupportInbox value="true">
+        <MaxCount value="-1" />
+      </SupportInbox>
+      <SupportOutbox value="true">
+        <MaxCount value="-1" />
+      </SupportOutbox>
+      <SupportDraftbox value="false">
+        <MaxCount value="-1" />
+      </SupportDraftbox>
+      <SupportSentbox value="true">
+        <MaxCount value="-1" />
+      </SupportSentbox>
+    </SupportBox>
+    <SMSViewer>
+      <SupportExport value="true" />
+    </SMSViewer>
+    <supporttime value="true" />
+    <SMS accessibility="all">
+      <SupportPhoneType accessibility="all" value="true" />
+      <SupportSeen value="true" />
+      <SupportThread value="true" />
+      <MaxCount value="-1" />
+      <Content type="String" charset="UTF-8" MaxLength="2000" />
+      <SupportAttribute>
+        <Reserved value="true" />
+        <Protected value="true" />
+      </SupportAttribute>
+    </SMS>
+    <MMS accessibility="all">
+      <MaxCount value="-1" />
+      <SupportFN value="true" />
+      <version accessibility="all" value="3.0" />
+      <TargetFilePath value="Internal:\_SamsungBnR_\ABR\MMS\" />
+      <SupportAttribute>
+        <Reserved value="true" />
+        <Protected value="true" />
+      </SupportAttribute>
+    </MMS>
+  </Message>
+  <Calendar accessibility="all">
+    <ImageLinkSupport value="true" />
+    <AttachImageNotExist value="true" />
+    <SupportMultiLocalCalendar accessibility="all" value="true" />
+    <NotEncodingDelimeter value="true" />
+    <SyncHistory value="true" />
+    <SupportRecurrenceException value="true" />
+    <AvailableWithoutAccount value="true" />
+    <SupportSetForever value="true" />
+    <SupportFirstDayofWeek value="true" />
+    <SupportRRULEWithNoGMT value="true" />
+    <SupportFixedRRULE value="true" />
+    <SupportUTCDUE value="true" />
+    <Schedule>
+      <MaxItemCount value="-1" />
+      <MaxScheduleCount>
+        <Appointment value="-1" />
+      </MaxScheduleCount>
+      <Enums>
+        <Enum name="ALARM_TIME_TYPE">
+          <Element name="None" value="0" type="None" />
+          <Element name="OnTime" value="1" type="OnTime" />
+          <Element name="Minute" value="2" type="Minute" />
+          <Element name="Hour" value="3" type="Hour" />
+          <Element name="Day" value="4" type="Day" />
+          <Element name="Week" value="5" type="Week" />
+        </Enum>
+        <Enum name="RECURRENCE_TYPE_APPOINTMENT_ANDROID">
+          <Element name="None" type="RECURRENCE_SUPPORT_FIELD_DOMESTICNONE" />
+          <Element name="Daily" type="RECURRENCE_SUPPORT_FIELD_DOMESTICNONE" />
+          <Element name="Workday" type="RECURRENCE_SUPPORT_FIELD_DOMESTICNONE" />
+          <Element name="Weekly" type="RECURRENCE_SUPPORT_FIELD_DOMESTICNONE" />
+          <Element name="Fortnightly" type="RECURRENCE_SUPPORT_FIELD_DOMESTICNONE" />
+          <Element name="MonthlyNth" type="RECURRENCE_SUPPORT_FIELD_DOMESTICNONE" />
+          <Element name="Monthly" type="RECURRENCE_SUPPORT_FIELD_DOMESTICNONE" />
+          <Element name="Yearly" type="RECURRENCE_SUPPORT_FIELD_DOMESTICNONE" />
+        </Enum>
+      </Enums>
+      <Appointment>
+        <DataField>
+          <Title type="String" charset="utf-16" MaxLength="1000" />
+          <StartDate type="DateTime" />
+          <EndDate type="DateTime" />
+          <AllDay type="Boolean" />
+          <Location type="String" charset="utf-16" MaxLength="1000" />
+          <Alarm>
+            <AlarmTime type="ALARM_TIME_TYPE" />
+            <Value type="int" />
+          </Alarm>
+          <Recurrence type="RECURRENCE_TYPE_APPOINTMENT_ANDROID" />
+          <Content type="String" charset="utf-16" MaxLength="8192" />
+        </DataField>
+      </Appointment>
+    </Schedule>
+    <Todo>
+      <MaxItemCount value="-1" />
+      <Enums>
+        <Enum name="PRIORITY_TYPE">
+          <Element name="High" value="1" />
+          <Element name="Normal" value="2" />
+          <Element name="Low" value="3" />
+        </Enum>
+        <Enum name="DONE_STATE">
+          <Element name="Done" value="1" />
+          <Element name="UnDone" value="2" />
+        </Enum>
+      </Enums>
+      <DataField>
+        <Title type="String" charset="utf-16" MaxLength="1000" />
+        <Content type="String" charset="utf-16" MaxLength="8192" />
+        <StartTime type="Date" />
+        <EndTime type="Date" />
+        <Priority type="PRIORITY_TYPE" />
+        <Alarm>
+          <Date type="Date" />
+          <Time type="Time" />
+        </Alarm>
+        <Done type="DONE_STATE" />
+      </DataField>
+    </Todo>
+  </Calendar>
+  <Phonebook>
+    <SyncHistory value="true" />
+    <LastModifiedTime value="true" />
+    <GUITemplate value="ANDROID">
+      <Revision value="JELLYBEAN" />
+    </GUITemplate>
+    <MaxItemCount value="65535" />
+    <SupportFavorite value="true" />
+    <SupportFullSizePhoto value="true" />
+    <PhotoSize accessibility="all" value="720*720" />
+    <MultipleAccount value="true" />
+    <SupportAccountBnR value="true" />
+    <MinimumYear value="1902" />
+    <MaximumYear value="2036" />
+    <DialChar value="*#,+,;()/N- ." />
+    <LunarCalendar value="true" />
+    <Enums>
+      <Enum name="TelType">
+        <Element type="Default" name="Mobile" />
+        <Element type="Default" name="Landline.Private" />
+        <Element type="Default" name="Landline.Business" />
+        <Element type="Default" name="Fax.Business" />
+        <Element type="Default" name="Fax.Private" />
+        <Element type="Default" name="Pager" />
+        <Element type="Default" name="Etc" />
+        <Element type="Default" name="Custom" />
+        <Element type="Default" name="Callback" />
+      </Enum>
+      <Enum name="GENERAL_TYPE">
+        <Element name="Private" />
+        <Element name="Business" />
+        <Element name="Other" />
+        <Element name="Custom" />
+      </Enum>
+      <Enum name="ADDRESS_TYPE">
+        <Element name="Private" value="1" />
+        <Element name="Business" value="2" />
+        <Element name="Other" value="3" />
+        <Element name="Custom" value="4" />
+      </Enum>
+      <Enum name="MESSENGER_TYPE">
+        <Element name="QQ" />
+        <Element name="AIM" />
+        <Element name="WindowsLive" />
+        <Element name="Yahoo" />
+        <Element name="Skype" />
+        <Element name="QQ" />
+        <Element name="ICQ" />
+        <Element name="Jabber" />
+        <Element name="WhatsApp" />
+        <Element name="Custom" />
+      </Enum>
+      <Enum name="RELATION_TYPE">
+        <Element name="X-ASSISTANT" />
+        <Element name="X-BROTHER" />
+        <Element name="X-CHILD" />
+        <Element name="X-DOMESTICPARTNER" />
+        <Element name="X-FATHER" />
+        <Element name="X-FRIEND" />
+        <Element name="X-MANAGER" />
+        <Element name="X-MOTHER" />
+        <Element name="X-PARENT" />
+        <Element name="X-PARTNER" />
+        <Element name="X-REFERDBY" />
+        <Element name="X-RELATIVE" />
+        <Element name="X-SISTER" />
+        <Element name="X-SPOUSE" />
+        <Element name="Custom" />
+      </Enum>
+      <Enum name="EVENT_TYPE">
+        <Element name="Other" />
+        <Element name="Custom" />
+      </Enum>
+    </Enums>
+    <DataField>
+      <Names>
+        <FirstName type="String" charset="utf-16" MaxLength="2000" />
+      </Names>
+      <TelNumbers>
+        <TelNumber count="999">
+          <TelType type="TEL_TYPE" value="Default" />
+          <TelNum type="String" charset="utf-16" MaxLength="2000" />
+        </TelNumber>
+      </TelNumbers>
+      <Emails>
+        <Email count="999">
+          <EmailType type="GENERAL_TYPE" value="1" />
+          <EmailAddr type="String" charset="utf-16" MaxLength="2000" />
+        </Email>
+      </Emails>
+      <MessengerIDs>
+        <MessengerID count="999">
+          <MessengerType type="MESSENGER_TYPE" value="1" />
+          <MessengerAddr type="String" charset="utf-16" MaxLength="2000" />
+        </MessengerID>
+      </MessengerIDs>
+      <Addresses>
+        <Address count="999">
+          <AddrType type="ADDRESS_TYPE" value="1" />
+          <Street type="text" charset="utf-16" MaxLength="2000" />
+          <City type="text" charset="utf-16" MaxLength="2000" />
+          <state type="text" charset="utf-16" MaxLength="2000" />
+          <PostalCode type="text" charset="utf-16" MaxLength="2000" />
+          <PObox type="text" charset="utf-16" MaxLength="2000" />
+          <country type="text" charset="utf-16" MaxLength="2000" />
+          <Neighborhood type="text" charset="utf-16" MaxLength="2000" />
+        </Address>
+      </Addresses>
+      <Organizations>
+        <Organization count="1">
+          <Company type="String" charset="utf-16" MaxLength="2000" />
+          <Department type="String" charset="utf-16" MaxLength="2000" />
+          <Position type="String" charset="utf-16" MaxLength="2000" />
+        </Organization>
+      </Organizations>
+      <Notes>
+        <Note count="1">
+          <Content type="String" charset="utf-16" MaxLength="2000" />
+        </Note>
+      </Notes>
+      <Nicknames>
+        <Nickname count="1">
+          <Name type="String" charset="utf-16" MaxLength="2000" />
+        </Nickname>
+      </Nicknames>
+      <Urls>
+        <Url count="999">
+          <UrlAddr type="String" charset="utf-16" MaxLength="2000" />
+        </Url>
+      </Urls>
+      <Birthday>
+        <Birthday count="1">
+          <BirthdayDate type="Date" />
+        </Birthday>
+      </Birthday>
+      <Anniversarys>
+        <Anniversary count="999">
+          <AnniversaryDate type="Date" />
+        </Anniversary>
+      </Anniversarys>
+      <Relations>
+        <Relation count="999">
+          <RelationType type="RELATION_TYPE" />
+          <RelationShip type="String" charset="utf-16" MaxLength="2000" />
+        </Relation>
+      </Relations>
+      <Events>
+        <Event count="999">
+          <EventType type="EVENT_TYPE" />
+          <EventDate type="Date" />
+        </Event>
+      </Events>
+    </DataField>
+    <PhonebookGroup>
+      <Readonly value="false" />
+      <MaxItemCount value="65535" />
+      <MultipleAccount value="true" />
+      <MultiGroup value="true">
+        <MaxCount value="65535" />
+      </MultiGroup>
+      <DataField>
+        <Name type="String" charset="utf-16" MaxLength="2000" />
+      </DataField>
+    </PhonebookGroup>
+  </Phonebook>
+  <Phonebook_com.google>
+    <SupportSync value="false" />
+    <GUITemplate value="ANDROID">
+      <Revision value="JELLYBEAN" />
+    </GUITemplate>
+    <MaxItemCount value="65535" />
+    <SupportFavorite value="true" />
+    <SupportFullSizePhoto value="true" />
+    <PhotoSize accessibility="all" value="720*720" />
+    <MultipleAccount value="true" />
+    <SupportAccountBnR value="true" />
+    <MinimumYear value="1902" />
+    <MaximumYear value="2036" />
+    <DialChar value="*#,+,;()/N- ." />
+    <LunarCalendar value="true" />
+    <Enums>
+      <Enum name="TelType">
+        <Element type="Default" name="Mobile" />
+        <Element type="Default" name="Landline.Private" />
+        <Element type="Default" name="Landline.Business" />
+        <Element type="Default" name="Fax.Business" />
+        <Element type="Default" name="Fax.Private" />
+        <Element type="Default" name="Pager" />
+        <Element type="Default" name="Etc" />
+        <Element type="Default" name="Custom" />
+        <Element type="Default" name="Callback" />
+      </Enum>
+      <Enum name="GENERAL_TYPE">
+        <Element name="Private" />
+        <Element name="Business" />
+        <Element name="Other" />
+        <Element name="Custom" />
+      </Enum>
+      <Enum name="ADDRESS_TYPE">
+        <Element name="Private" value="1" />
+        <Element name="Business" value="2" />
+        <Element name="Other" value="3" />
+        <Element name="Custom" value="4" />
+      </Enum>
+      <Enum name="MESSENGER_TYPE">
+        <Element name="QQ" />
+        <Element name="AIM" />
+        <Element name="WindowsLive" />
+        <Element name="Yahoo" />
+        <Element name="Skype" />
+        <Element name="QQ" />
+        <Element name="ICQ" />
+        <Element name="Jabber" />
+        <Element name="WhatsApp" />
+        <Element name="Custom" />
+      </Enum>
+      <Enum name="RELATION_TYPE">
+        <Element name="X-ASSISTANT" />
+        <Element name="X-BROTHER" />
+        <Element name="X-CHILD" />
+        <Element name="X-DOMESTICPARTNER" />
+        <Element name="X-FATHER" />
+        <Element name="X-FRIEND" />
+        <Element name="X-MANAGER" />
+        <Element name="X-MOTHER" />
+        <Element name="X-PARENT" />
+        <Element name="X-PARTNER" />
+        <Element name="X-REFERDBY" />
+        <Element name="X-RELATIVE" />
+        <Element name="X-SISTER" />
+        <Element name="X-SPOUSE" />
+        <Element name="Custom" />
+      </Enum>
+      <Enum name="EVENT_TYPE">
+        <Element name="Other" />
+        <Element name="Custom" />
+      </Enum>
+    </Enums>
+    <DataField>
+      <Names>
+        <FirstName type="String" charset="utf-16" MaxLength="2000" />
+        <MiddleName type="String" charset="utf-16" MaxLength="2000" />
+        <LastName type="String" charset="utf-16" MaxLength="2000" />
+        <TitleName type="String" charset="utf-16" MaxLength="2000" />
+        <SuffixName type="String" charset="utf-16" MaxLength="2000" />
+        <ReadingFirstName type="String" charset="utf-16" MaxLength="2000" />
+        <ReadingMiddleName type="String" charset="utf-16" MaxLength="2000" />
+        <ReadingLastName type="String" charset="utf-16" MaxLength="2000" />
+      </Names>
+      <TelNumbers>
+        <TelNumber count="999">
+          <TelType type="TEL_TYPE" value="Default" />
+          <TelNum type="String" charset="utf-16" MaxLength="2000" />
+        </TelNumber>
+      </TelNumbers>
+      <Emails>
+        <Email count="999">
+          <EmailType type="GENERAL_TYPE" value="1" />
+          <EmailAddr type="String" charset="utf-16" MaxLength="2000" />
+        </Email>
+      </Emails>
+      <MessengerIDs>
+        <MessengerID count="999">
+          <MessengerType type="MESSENGER_TYPE" value="1" />
+          <MessengerAddr type="String" charset="utf-16" MaxLength="2000" />
+        </MessengerID>
+      </MessengerIDs>
+      <Addresses>
+        <Address count="999">
+          <AddrType type="ADDRESS_TYPE" value="1" />
+          <Street type="text" charset="utf-16" MaxLength="2000" />
+          <City type="text" charset="utf-16" MaxLength="2000" />
+          <state type="text" charset="utf-16" MaxLength="2000" />
+          <PostalCode type="text" charset="utf-16" MaxLength="2000" />
+          <PObox type="text" charset="utf-16" MaxLength="2000" />
+          <country type="text" charset="utf-16" MaxLength="2000" />
+          <Neighborhood type="text" charset="utf-16" MaxLength="2000" />
+        </Address>
+      </Addresses>
+      <Organizations>
+        <Organization count="1">
+          <Company type="String" charset="utf-16" MaxLength="2000" />
+          <Department type="String" charset="utf-16" MaxLength="2000" />
+          <Position type="String" charset="utf-16" MaxLength="2000" />
+        </Organization>
+      </Organizations>
+      <Notes>
+        <Note count="1">
+          <Content type="String" charset="utf-16" MaxLength="2000" />
+        </Note>
+      </Notes>
+      <Nicknames>
+        <Nickname count="1">
+          <Name type="String" charset="utf-16" MaxLength="2000" />
+        </Nickname>
+      </Nicknames>
+      <Urls>
+        <Url count="999">
+          <UrlAddr type="String" charset="utf-16" MaxLength="2000" />
+        </Url>
+      </Urls>
+      <Birthday>
+        <Birthday count="1">
+          <BirthdayDate type="Date" />
+        </Birthday>
+      </Birthday>
+      <Anniversarys>
+        <Anniversary count="999">
+          <AnniversaryDate type="Date" />
+        </Anniversary>
+      </Anniversarys>
+      <Relations>
+        <Relation count="999">
+          <RelationType type="RELATION_TYPE" />
+          <RelationShip type="String" charset="utf-16" MaxLength="2000" />
+        </Relation>
+      </Relations>
+      <Events>
+        <Event count="999">
+          <EventType type="EVENT_TYPE" />
+          <EventDate type="Date" />
+        </Event>
+      </Events>
+    </DataField>
+    <PhonebookGroup>
+      <Readonly value="false" />
+      <MaxItemCount value="65535" />
+      <MultipleAccount value="true" />
+      <DataField>
+        <Name type="String" charset="utf-16" MaxLength="2000" />
+      </DataField>
+    </PhonebookGroup>
+  </Phonebook_com.google>
+  <Phonebook_com.android.exchange>
+    <SupportSync value="false" />
+    <GUITemplate value="ANDROID">
+      <Revision value="JELLYBEAN" />
+    </GUITemplate>
+    <MaxItemCount value="65535" />
+    <SupportFavorite value="true" />
+    <SupportFullSizePhoto value="true" />
+    <PhotoSize accessibility="all" value="720*720" />
+    <MultipleAccount value="true" />
+    <SupportAccountBnR value="true" />
+    <MinimumYear value="1902" />
+    <MaximumYear value="2036" />
+    <DialChar value="*#,+,;()/N- ." />
+    <LunarCalendar value="true" />
+    <Enums>
+      <Enum name="TelType">
+        <Element type="Default" name="Mobile" />
+        <Element type="Default" name="Landline.Private" />
+        <Element type="Default" name="Landline.Business" />
+        <Element type="Default" name="Fax.Business" />
+        <Element type="Default" name="Fax.Private" />
+        <Element type="Default" name="Pager" />
+        <Element type="Default" name="CarPhone" />
+        <Element type="Default" name="CompanyMain" />
+        <Element type="Default" name="MMS" />
+        <Element type="Default" name="RadioTel" />
+        <Element type="Default" name="Secretary" />
+      </Enum>
+      <Enum name="GENERAL_TYPE">
+        <Element name="Private" />
+        <Element name="Business" />
+        <Element name="Other" />
+        <Element name="Custom" />
+      </Enum>
+      <Enum name="ADDRESS_TYPE">
+        <Element name="Private" value="1" />
+        <Element name="Business" value="2" />
+        <Element name="Other" value="3" />
+      </Enum>
+      <Enum name="MESSENGER_TYPE">
+        <Element name="QQ" />
+        <Element name="AIM" />
+        <Element name="WindowsLive" />
+        <Element name="Yahoo" />
+        <Element name="Skype" />
+        <Element name="QQ" />
+        <Element name="ICQ" />
+        <Element name="Jabber" />
+        <Element name="WhatsApp" />
+        <Element name="Custom" />
+      </Enum>
+    </Enums>
+    <DataField>
+      <Names>
+        <FirstName type="String" charset="utf-16" MaxLength="2000" />
+        <MiddleName type="String" charset="utf-16" MaxLength="2000" />
+        <LastName type="String" charset="utf-16" MaxLength="2000" />
+        <TitleName type="String" charset="utf-16" MaxLength="2000" />
+        <SuffixName type="String" charset="utf-16" MaxLength="2000" />
+        <ReadingFirstName type="String" charset="utf-16" MaxLength="2000" />
+        <ReadingLastName type="String" charset="utf-16" MaxLength="2000" />
+      </Names>
+      <TelNumbers>
+        <TelNumber count="10">
+          <TelType type="TEL_TYPE" value="Default" />
+          <TelNum type="String" charset="utf-16" MaxLength="2000" />
+        </TelNumber>
+      </TelNumbers>
+      <Emails>
+        <Email count="3">
+          <EmailType type="GENERAL_TYPE" value="1" />
+          <EmailAddr type="String" charset="utf-16" MaxLength="2000" />
+        </Email>
+      </Emails>
+      <MessengerIDs>
+        <MessengerID count="3">
+          <MessengerType type="MESSENGER_TYPE" value="1" />
+          <MessengerAddr type="String" charset="utf-16" MaxLength="2000" />
+        </MessengerID>
+      </MessengerIDs>
+      <Addresses>
+        <Address count="3">
+          <AddrType type="ADDRESS_TYPE" value="1" />
+          <Street type="text" charset="utf-16" MaxLength="2000" />
+          <City type="text" charset="utf-16" MaxLength="2000" />
+          <state type="text" charset="utf-16" MaxLength="2000" />
+          <PostalCode type="text" charset="utf-16" MaxLength="2000" />
+          <PObox type="text" charset="utf-16" MaxLength="2000" />
+          <country type="text" charset="utf-16" MaxLength="2000" />
+          <Neighborhood type="text" charset="utf-16" MaxLength="2000" />
+        </Address>
+      </Addresses>
+      <Organizations>
+        <Organization count="1">
+          <Company type="String" charset="utf-16" MaxLength="2000" />
+          <Department type="String" charset="utf-16" MaxLength="2000" />
+          <Position type="String" charset="utf-16" MaxLength="2000" />
+        </Organization>
+      </Organizations>
+      <Notes>
+        <Note count="1">
+          <Content type="String" charset="utf-16" MaxLength="2000" />
+        </Note>
+      </Notes>
+      <Nicknames>
+        <Nickname count="1">
+          <Name type="String" charset="utf-16" MaxLength="2000" />
+        </Nickname>
+      </Nicknames>
+      <Urls>
+        <Url count="1">
+          <UrlAddr type="String" charset="utf-16" MaxLength="2000" />
+        </Url>
+      </Urls>
+      <Birthday>
+        <Birthday count="1">
+          <BirthdayDate type="Date" />
+        </Birthday>
+      </Birthday>
+    </DataField>
+  </Phonebook_com.android.exchange>
+  <Applications xmlns="http://www.samsungmonile.com/applicationlist.xsd">
+    <Application AppId="com.android.contacts" name="Calllog" AppVersion="332701240">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\ABR\Calllog.bk</BnRFolderPath>
+      <DefaultXml>call_log.xml</DefaultXml>
+      <BackupType>File</BackupType>
+      <EncryptionFile>call_log.xml</EncryptionFile>
+      <EncryptionLevel>level_2</EncryptionLevel>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="com.sec.android.app.clockpackage" name="Alarm" AppVersion="208001000">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\ABR\Alarm.bk</BnRFolderPath>
+      <DefaultXml>alarm.xml</DefaultXml>
+      <BackupType>File</BackupType>
+      <EncryptionFile>alarm.xml</EncryptionFile>
+      <EncryptionLevel>level_2</EncryptionLevel>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="com.sec.android.app.wallpaperchooser" name="Wallpaper" AppVersion="301600200">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\ABR\Wallpaper.bk</BnRFolderPath>
+      <DefaultXml>wallpaper.xml</DefaultXml>
+      <BackupType>File</BackupType>
+      <EncryptionLevel>level_2</EncryptionLevel>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="com.sec.android.app.sbrowser" name="Bookmark" AppVersion="540203000">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\ABR\Bookmark.bk</BnRFolderPath>
+      <DefaultXml>bookmark.xml</DefaultXml>
+      <BackupType>File</BackupType>
+      <Detail>restoreonly</Detail>
+      <EncryptionLevel>level_2</EncryptionLevel>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="com.sec.android.app.ringtoneBR" name="Ringtone" AppVersion="23">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\ABR\Ringtone\</BnRFolderPath>
+      <FileList>filelist.xml</FileList>
+      <DefaultXml>ringtone.xml</DefaultXml>
+      <BackupType>Folder</BackupType>
+      <Detail>seconly</Detail>
+      <EncryptionLevel>level_2</EncryptionLevel>
+      <Compatibility>device</Compatibility>
+    </Application>
+    <Application AppId="com.android.systemui" name="LockScreen" AppVersion="23">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\ABR\Lockscreen.bk</BnRFolderPath>
+      <DefaultXml>lockscreen.xml</DefaultXml>
+      <BackupType>File</BackupType>
+      <EncryptionLevel>level_2</EncryptionLevel>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="com.sec.android.app.voicerecorder;com.sec.android.app.voicenote" name="VoiceMemo" AppVersion="2017041110">
+      <Type>download</Type>
+      <Category>Async</Category>
+      <version>2.0</version>
+      <SupportVersion>2.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\Sounds\;Internal:\_SamsungBnR_\ABR\VoiceMemoInfo.xml</BnRFolderPath>
+      <BackupType>Folder</BackupType>
+      <EncryptionLevel>level_0</EncryptionLevel>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="com.samsung.android.snote" name="SNote3" AppVersion="520425000">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\SnoteData\</BnRFolderPath>
+      <Extension>spd;snb</Extension>
+      <Detail>LinkedToSplanner</Detail>
+      <Compatibility>platform</Compatibility>
+    </Application>
+    <Application AppId="MultimediaContents" name="Music" AppVersion="2">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:;Internal:\_SamsungBnR_\ABR\MusicInfo.xml</BnRFolderPath>
+      <Extension>mp3;m4a;mp4;wav;amr;awb;wma;ogg;oga;aac;3ga;flac;mpga;imy;mid;qcp;mmf;asf</Extension>
+      <BackupType>Folder</BackupType>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="MultimediaContents" name="Photo" AppVersion="2">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:;Internal:\_SamsungBnR_\ABR\PhotoInfo.xml</BnRFolderPath>
+      <Extension>jpg;jpeg;gif;png;bmp;wbmp;tif;tiff</Extension>
+      <BackupType>Folder</BackupType>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="MultimediaContents" name="Video" AppVersion="2">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:;Internal:\_SamsungBnR_\ABR\VideoInfo.xml</BnRFolderPath>
+      <Extension>avi;mp4;m4v;3gp;3g2;3gpp;3gpp2;mkv;wmv;asf;flv;divx;mpg;mpeg;rm;rmvb;mov;k3g;skm;svi;swf</Extension>
+      <BackupType>Folder</BackupType>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="MultimediaContents" name="Docs" AppVersion="2">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:;Internal:\_SamsungBnR_\ABR\DocumentInfo.xml</BnRFolderPath>
+      <ExceptFolderPath>Internal:/Android/data;Internal:/_SamsungBnR_</ExceptFolderPath>
+      <Extension>pdf;ppt;doc;docx;pptx;xls;xlsx;hwp;gul</Extension>
+      <BackupType>Folder</BackupType>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="MultimediaContents" name="Playlist" AppVersion="2">
+      <Type>preload</Type>
+      <Category>Sync</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\Playlists</BnRFolderPath>
+      <Extension>pla;m3u</Extension>
+      <BackupType>Folder</BackupType>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="" name="Configuration" AppVersion="2">
+      <Type>preload</Type>
+      <Category>Sync</Category>
+      <version>2.0</version>
+      <SupportVersion>2.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\BR\Configuration.bk</BnRFolderPath>
+      <BackupType>File</BackupType>
+      <Detail>Wallpaper;Ringtone;ETC;noAirplain</Detail>
+      <Compatibility>model</Compatibility>
+    </Application>
+    <Application AppId="" name="Email" AppVersion="2">
+      <Type>preload</Type>
+      <Category>Sync</Category>
+      <version>2.0</version>
+      <SupportVersion>2.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\BR\Email.bk</BnRFolderPath>
+      <BackupType>File</BackupType>
+      <Detail>Account;Settings</Detail>
+      <EncryptionLevel>level_2</EncryptionLevel>
+      <Compatibility>device</Compatibility>
+    </Application>
+    <Application AppId="" name="Application" AppVersion="2">
+      <Type>preload</Type>
+      <Category>Sync</Category>
+      <version>3.0</version>
+      <SupportVersion>2.0;3.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\restore\</BnRFolderPath>
+      <BackupType>Folder</BackupType>
+      <Compatibility>platform</Compatibility>
+    </Application>
+    <Application AppId="com.samsung.android.app.memo" name="NMemo" AppVersion="1601026002">
+      <Type>download</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\ABR\NMemo\</BnRFolderPath>
+      <FileList>filelist.xml</FileList>
+      <Extension>bk;snb</Extension>
+      <BackupType>Folder</BackupType>
+      <Detail>NMemoBnR;hasTitle;hasCategory;SupportImage</Detail>
+      <EncryptionLevel>level_1</EncryptionLevel>
+      <Compatibility>all</Compatibility>
+      <AdditionalBnRType>TMemo1;TMemo2</AdditionalBnRType>
+      <DataSize>655360</DataSize>
+    </Application>
+    <Application AppId="com.sec.android.app.shealth" name="SHealth2" AppVersion="5750025">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\ABR\SHealth2\</BnRFolderPath>
+      <FileList>filelist.xml</FileList>
+      <BackupType>Folder</BackupType>
+      <EncryptionLevel>level_2</EncryptionLevel>
+      <Compatibility>platform</Compatibility>
+      <Status>UnLocked</Status>
+    </Application>
+    <Application AppId="" name="Contact" AppVersion="1">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\ABR\Contact\</BnRFolderPath>
+      <FileList>filelist.xml</FileList>
+      <BackupType>Folder</BackupType>
+      <EncryptionLevel>level_0</EncryptionLevel>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="" name="Schedule" AppVersion="1">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\ABR\Schedule\</BnRFolderPath>
+      <FileList>filelist.xml</FileList>
+      <BackupType>Folder</BackupType>
+      <EncryptionLevel>level_0</EncryptionLevel>
+      <Compatibility>all</Compatibility>
+    </Application>
+    <Application AppId="com.android.providers.telephony" name="Message" AppVersion="23">
+      <Type>preload</Type>
+      <Category>Async</Category>
+      <version>1.0</version>
+      <SupportVersion>1.0</SupportVersion>
+      <Platform>Android</Platform>
+      <BnRFolderPath>Internal:\_SamsungBnR_\ABR\Message\</BnRFolderPath>
+      <FileList>filelist.xml</FileList>
+      <BackupType>Folder</BackupType>
+      <Detail>hasFreeMessage</Detail>
+      <EncryptionLevel>level_2</EncryptionLevel>
+      <Compatibility>all</Compatibility>
+    </Application>
+  </Applications>
+</SDP>
